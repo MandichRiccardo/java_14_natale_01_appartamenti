@@ -24,15 +24,16 @@ public class Appartamento{
         this.piano = piano;
     }
 
-    public Appartamento(double mq, String citta, String indirizzo, String classeEnergetica, boolean pregiato, String proprietario, double prezzoMq, double valore) {
-        this.mq = mq;
-        this.citta = citta;
-        this.indirizzo = indirizzo;
-        this.classeEnergetica = classeEnergetica;
-        this.pregiato = pregiato;
-        this.proprietario = proprietario;
-        this.prezzoMq = prezzoMq;
-        this.valore = valore;
+    public Appartamento(Appartamento a, int piano) {
+        this.mq = a.mq;
+        this.citta = a.citta;
+        this.indirizzo = a.indirizzo;
+        this.classeEnergetica = a.classeEnergetica;
+        this.pregiato = a.pregiato;
+        this.proprietario = a.proprietario;
+        this.prezzoMq = a.prezzoMq;
+        this.piano = piano;
+        this.valore = a.valore;
     }
 
     public double getMq() {
