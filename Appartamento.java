@@ -103,7 +103,7 @@ public class Appartamento{
     public void setValore() {
         double valore;
         if(pregiato){
-            valore = (prezzoMq/100)*15;
+            valore = prezzoMq+(prezzoMq/100)*15;
         }else{
             valore = prezzoMq;
         }
